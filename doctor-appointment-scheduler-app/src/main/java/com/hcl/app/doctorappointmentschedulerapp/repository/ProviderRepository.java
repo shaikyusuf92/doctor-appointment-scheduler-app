@@ -9,6 +9,8 @@ import java.util.List;
 @Repository
 public interface ProviderRepository extends JpaRepository<Provider, Long> {
 
+    //Repository method to find the providers by zipcode
+    //Returns list of Providers.
     List<Provider> findByZipCode (String zipCode);
 
 }
