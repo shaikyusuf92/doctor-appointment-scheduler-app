@@ -2,9 +2,10 @@ package com.hcl.app.doctorappointmentschedulerapp.entities;
 
 import jakarta.persistence.*;
 
-import java.util.ArrayList;
-import java.util.List;
 
+/**
+ * This class is the model representation of Provider UI
+ */
 @Entity
 @Table(name = "providers")
 public class Provider {
