@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+//added cross-origin support to make http calls with angular ui
 @CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/api/v1/")
@@ -23,9 +24,9 @@ public class ProviderController {
         return providerRepository.findByZipCode(zipcode);
     }
 
-    // create provider rest api
+    // create providers rest api
     @PostMapping("/providers")
-    public Provider createEmployee(@RequestBody Provider provider) {
+    public Provider createProvider(@RequestBody Provider provider) {
         return providerRepository.save(provider);
     }
 
